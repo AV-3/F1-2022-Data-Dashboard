@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 #Sets page layout/allows the columns and graphs to use 100% width of the screen
-st.set_page_config(page_title= "Home • F1 Dashboard", layout="centered")
+st.set_page_config(page_title= "Home • F1 Dashboard", layout="centered", page_icon=":checkered_flag:")
 
 #Import CSS
 with open("styles.css") as css:
@@ -41,3 +41,9 @@ racing with interactive visualizations that make it easy to compare drivers and 
 
 """)
 st.write("Check out the [GitHub repository](https://github.com/AV-3/F1-2022-Data-Dashboard) for more information.")
+
+#Sidebar
+st.sidebar.title("F1 2022 Dash")
+st.sidebar.markdown("Created by Alan Velez")
+st.sidebar.markdown("[GitHub](https://github.com/AV-3)")
+st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/alan-velez-615401220/)")
