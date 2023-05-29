@@ -9,12 +9,6 @@ st.set_page_config(page_title= "Overall Results • F1 Dashboard", layout="wide"
 #Sets color variables
 primary_color = "#f2023e"
 
-#Sidebar
-st.sidebar.title("F1 2022 Dash")
-st.sidebar.markdown("Created by Alan Velez")
-st.sidebar.markdown("[GitHub](https://github.com/AV-3)")
-st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/alan-velez-615401220/)")
-
 #Import CSS
 with open("styles.css") as css:
     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
@@ -26,17 +20,17 @@ df2 = pd.read_csv("clean_csv/clean_teams.csv")
 #Page title
 st.title("F1 2022 Season Overview")
 
-#Makes tabs for each page
+#Tab setup
 tab1, tab2 = st.tabs(["Drivers", "Constructors"])
 
 #Driver Stats Tab
 with tab1:
     #Row A/Podium metrics
-    st.subheader("Podium(Top 3 Drivers)")
+    st.subheader("World Championship Results")
     col1, col2, col3 = st.columns(3)
-    col1.metric("MAX VERSTAPPEN (Red Bull #1)", "1st", "454 pts")
-    col2.metric("CHARLES LECLERC (Ferrari #16)", "2nd", "308 pts")
-    col3.metric("SERGIO PEREZ (Red Bull #11)", "3rd","305 pts")
+    col1.metric("MAX VERSTAPPEN (Red Bull)", "1st", "454 pts")
+    col2.metric("CHARLES LECLERC (Ferrari)", "2nd", "308 pts")
+    col3.metric("SERGIO PEREZ (Red Bull)", "3rd","305 pts")
     
     #Row B/Standings bar chart
     st.subheader("Drivers Standings")
@@ -81,7 +75,7 @@ with tab1:
 #Constructor Stats Tab
 with tab2:
     #Row A
-    st.subheader("Podium(Top 3 Constructors)")
+    st.subheader("Constructors Results")
     col1, col2, col3 = st.columns(3)
     col1.metric("RED BULL", "1st", "759 pts")
     col2.metric("FERRARI", "2nd", "554 pts")

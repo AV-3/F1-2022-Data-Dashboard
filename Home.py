@@ -16,8 +16,8 @@ st.title("Background:")
 st.markdown(
     """
     Formula One (F1) is the highest class of single-seater auto racing sanctioned by the Fédération Internationale de l'Automobile (FIA).
-    The championship consists of a series of races, known as Grands Prix, which are held on purpose-built circuits and public roads. 
-    The drivers and constructors compete for the World Drivers' Championship and the World Constructors' Championship, respectively. 
+    The championship consists of a series of races, known as Grands Prix, which are paired with practice and qualifying sessions. 
+    The drivers and constructors compete for the World Drivers Championship and the World Constructors Championship, respectively. 
     Points are awarded to the top ten finishers in each race, with the first-place finisher receiving 25 points, the second-place finisher receiving 18 points, and so on.
 
     The 2022 Formula One season consisted of 22 races or "Grands Prix." The first race was held in Bahrain on March 20, and the 
@@ -43,7 +43,6 @@ racing with interactive visualizations that make it easy to compare drivers and 
 st.write("Check out the [GitHub repository](https://github.com/AV-3/F1-2022-Data-Dashboard) for more information.")
 
 #Sidebar
-st.sidebar.title("F1 2022 Dash")
 st.sidebar.markdown("Created by Alan Velez")
 st.sidebar.markdown("[GitHub](https://github.com/AV-3)")
 st.sidebar.markdown("[LinkedIn](https://www.linkedin.com/in/alan-velez-615401220/)")
