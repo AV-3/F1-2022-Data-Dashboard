@@ -30,8 +30,6 @@ bahrain_df1 = df1.iloc[0:20,:]
 bahrain_df2 = df2.iloc[0:20,:]
 bahrain_df3 = df3.iloc[0:20,:]
 
-st.image("images/F1 Bahrain.png")
-
 if race_select == "Bahrain":
     with tab1:
         st.subheader("Podium")
