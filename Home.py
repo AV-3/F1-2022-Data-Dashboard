@@ -11,7 +11,7 @@ with open("styles.css") as css:
 
 #Landing page
 st.title("Welcome to the F1 2022 Dashboard")
-st.image("images/F1 pit.jpg", caption="Scuderia Ferrari F1 Team 2020 - Image from unsplash.com")
+#st.image("images/F1 pit.jpg", caption="Scuderia Ferrari F1 Team 2020 - Image from unsplash.com")
 st.title("Background:")
 st.markdown(
     """
