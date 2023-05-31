@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 #Sets page layout/allows the columns and graphs to use 100% width of the screen
 st.set_page_config(page_title= "Home • F1 Dashboard", layout="centered", page_icon=":checkered_flag:")
